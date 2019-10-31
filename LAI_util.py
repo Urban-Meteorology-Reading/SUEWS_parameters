@@ -109,11 +109,12 @@ def read_data(year, name):
     df_output, df_state_final = sp.run_supy(df_forcing_run,
                                             df_state_init,
                                             save_state=False)
-
+    #df_output=df_output[(df_output.index.year>=year) & (df_output.index.year<(year+1))]
+    
     return df_output, df_state_final, df_state_init, df_period, grid, df_forcing_run,level
 
 
-def calc_vars(df_output, grid, df_forcing_run,year):
+def calc_vars(df_output, grid, df_forcing_run,year,level):
 
     df_output_2 = df_output.loc[grid, :]
     df_output_2 = df_output_2[df_output_2.index.year >= year]
@@ -121,14 +122,25 @@ def calc_vars(df_output, grid, df_forcing_run,year):
     lai_model = pd.DataFrame(df_output_2.SUEWS.LAI)
     a = lai_model.index.strftime('%j')
     lai_model['DOY'] = [int(b) for b in a]
+    
+    if(level==1):
+        nameGDD='GDD_DecTr'
+        nameSDD='SDD_DecTr'
+    elif(level==0):
+        nameGDD='GDD_EveTr'
+        nameSDD='SDD_EveTr'
+    if(level==2):
+        nameGDD='GDD_Grass'
+        nameSDD='SDD_Grass'
 
-    GDD_model = pd.DataFrame(df_output_2.DailyState.GDD1_g)
+    GDD_model = pd.DataFrame(df_output_2.DailyState[nameGDD])
     a = GDD_model.index.strftime('%j')
     GDD_model['DOY'] = [int(b) for b in a]
     GDD_model = GDD_model.dropna()
     GDD_model = GDD_model.iloc[1:]
 
-    SDD_model = pd.DataFrame(df_output_2.DailyState.GDD2_s)
+    SDD_model = pd.DataFrame(df_output_2.DailyState[nameSDD])
+    print(SDD_model)
     a = SDD_model.index.strftime('%j')
     SDD_model['DOY'] = [int(b) for b in a]
     SDD_model = SDD_model.dropna()
@@ -140,7 +152,7 @@ def calc_vars(df_output, grid, df_forcing_run,year):
     a = Tair.index.strftime('%j')
     Tair['DOY'] = [int(b) for b in a]
 
-    return lai_model, GDD_model, SDD_model, Tair
+    return lai_model, GDD_model, SDD_model, Tair,nameGDD,nameSDD
 
 
 
@@ -148,7 +160,7 @@ def calc_vars(df_output, grid, df_forcing_run,year):
 
 def LAI_tune(year,name):
     df_output,df_state_final,df_state_init,df_period,grid,df_forcing_run,level = read_data(year,name)
-    lai_model,GDD_model,SDD_model,Tair=calc_vars(df_output,grid,df_forcing_run,year)
+    lai_model,GDD_model,SDD_model,Tair,nameGDD,nameSDD=calc_vars(df_output,grid,df_forcing_run,year,level)
     clear_output()
 
     with open('LAI/'+name+'-'+str(year)+'-MODIS','wb') as f:
@@ -184,13 +196,13 @@ def LAI_tune(year,name):
     try:
         max_y=30
         for gdd_day in [90,100,110,120,130,140,150]:
-            a=GDD_model[GDD_model.DOY==gdd_day].GDD1_g
+            a=GDD_model[GDD_model.DOY==gdd_day][nameGDD]
             plt.plot([gdd_day,gdd_day],[-15,max_y],color='r')
             plt.annotate(str(np.round(a.values[0],0)),(gdd_day-5,-14),color='r',rotation=90)
 
 
         for sdd_day in [300,310,320,330,340,350,360]:
-            a=SDD_model[SDD_model.DOY==sdd_day].GDD2_s
+            a=SDD_model[SDD_model.DOY==sdd_day][nameSDD]
             plt.plot([sdd_day,sdd_day],[-15,max_y],color='b')
             plt.annotate(str(np.round(a.values[0],0)),(sdd_day-5,-14),color='b',rotation=90)
     except:
@@ -214,7 +226,7 @@ def LAI_test(years,name):
         print(name+'-'+str(year))
         counter=counter+1
         df_output,df_state_final,df_state_init,df_period,grid,df_forcing_run,level = read_data(year,name)
-        lai_model,GDD_model,SDD_model,Tair=calc_vars(df_output,grid,df_forcing_run,year)
+        lai_model,GDD_model,SDD_model,Tair,nameGDD,nameSDD=calc_vars(df_output,grid,df_forcing_run,year,level)
         clear_output()
 
         with open('LAI/'+name+'-'+str(year)+'-MODIS','wb') as f:
@@ -241,13 +253,13 @@ def LAI_test(years,name):
         try:
             max_y=30
             for gdd_day in [90,110,130,150]:
-                a=GDD_model[GDD_model.DOY==gdd_day].GDD1_g
+                a=GDD_model[GDD_model.DOY==gdd_day][nameGDD]
                 ax.plot([gdd_day,gdd_day],[-15,max_y],color='r')
                 ax.annotate(str(np.round(a.values[0],0)),(gdd_day-10,-14),color='r',rotation=90)
 
 
             for sdd_day in [300,320,340,360]:
-                a=SDD_model[SDD_model.DOY==sdd_day].GDD2_s
+                a=SDD_model[SDD_model.DOY==sdd_day][nameSDD]
                 ax.plot([sdd_day,sdd_day],[-15,max_y],color='b')
                 ax.annotate(str(np.round(a.values[0],0)),(sdd_day-10,-14),color='b',rotation=90)
         except:
@@ -276,7 +288,7 @@ def sample_plot(name,years):
         print(name+'-'+str(year))
         counter=counter+1
         df_output,df_state_final,df_state_init,df_period,grid,df_forcing_run,level = read_data(year,name)
-        lai_model,GDD_model,SDD_model,Tair=calc_vars(df_output,grid,df_forcing_run,year)
+        lai_model,GDD_model,SDD_model,Tair,nameGDD,nameSDD=calc_vars(df_output,grid,df_forcing_run,year,level)
         clear_output()
         with open('LAI/'+name+'-'+str(year)+'-MODIS','wb') as f:
             pickle.dump(df_period, f)
@@ -317,7 +329,7 @@ def sample_plot(name,years):
 
         max_y=35
         for gdd_day in [105,110,115,120]:
-            a=GDD_model[GDD_model.DOY==gdd_day].GDD1_g
+            a=GDD_model[GDD_model.DOY==gdd_day][nameGDD]
             ax.plot([gdd_day,gdd_day],[-15,max_y],color='r',alpha=0.5)
             ax.annotate(str(np.round(a.values[0],1)),(gdd_day-2,-14),color='k',rotation=90,fontsize=10)
 
@@ -327,7 +339,7 @@ def sample_plot(name,years):
 
 
         for sdd_day in [291,296,301,306]:
-            a=SDD_model[SDD_model.DOY==sdd_day].GDD2_s
+            a=SDD_model[SDD_model.DOY==sdd_day][nameSDD]
             ax.plot([sdd_day,sdd_day],[-15,max_y],color='b',alpha=0.5)
             ax.annotate(str(np.round(a.values[0],1)),(sdd_day-2,-14),color='k',rotation=90,fontsize=10)
 

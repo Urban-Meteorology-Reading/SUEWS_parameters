@@ -197,7 +197,7 @@ def read_plot(years,name,multiple_run=0):
 
         df_output_2=df_output.SUEWS.loc[grid]
         df_output_2=df_output_2[df_output_2.index.year>=year]
-
+   
         alb_model=pd.DataFrame(df_output_2.AlbBulk)
         a=alb_model.index.strftime('%j')
         alb_model['DOY']=[int(b) for b in a]
