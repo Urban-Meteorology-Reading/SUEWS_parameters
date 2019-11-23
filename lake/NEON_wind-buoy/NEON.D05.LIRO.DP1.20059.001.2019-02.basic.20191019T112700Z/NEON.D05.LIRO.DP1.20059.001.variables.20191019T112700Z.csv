@@ -1,0 +1,147 @@
+table,fieldName,description,dataType,units,downloadPkg
+WSDBuoy_2min,startDateTime,"Date and time at which a sampling is initiated",dateTime,NA,basic
+WSDBuoy_2min,endDateTime,"Date and time at which a sampling is completed",dateTime,NA,basic
+WSDBuoy_2min,buoyWindSpeedMean,"Arithmetic mean of wind speed on buoy",real,metersPerSecond,basic
+WSDBuoy_2min,buoyWindSpeedMinimum,"Minimum wind speed on buoy",real,metersPerSecond,basic
+WSDBuoy_2min,buoyWindSpeedMaximum,"Maximum wind speed on buoy",real,metersPerSecond,basic
+WSDBuoy_2min,buoyWindSpeedVariance,"Variance in wind speed on buoy",real,metersPerSecondSquared,basic
+WSDBuoy_2min,buoyWindSpeedNumPts,"Number of points used to calculate the arithmetic mean of wind speed on buoy",real,number,basic
+WSDBuoy_2min,buoyWindSpeedExpUncert,"Expanded uncertainty for wind speed on buoy",real,metersPerSecond,basic
+WSDBuoy_2min,buoyWindSpeedStdErMean,"Standard error of the mean for wind speed on buoy",real,metersPerSecond,basic
+WSDBuoy_2min,buoyWindSpeedRangeFailQM,"Buoy wind speed quality metric that summarizes the failed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindSpeedRangePassQM,"Buoy wind speed quality metric that summarizes the passed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindSpeedRangeNAQM,"Buoy wind speed quality metric that summarizes when the range test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindSpeedPersistenceFailQM,"Buoy wind speed quality metric that summarizes  the failed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindSpeedPersistencePassQM,"Buoy wind speed quality metric that summarizes the passed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindSpeedPersistenceNAQM,"Buoy wind speed quality metric that summarizes when the persistence test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindSpeedNullFailQM,"Buoy wind speed quality metric that summarizes the failed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindSpeedNullPassQM,"Buoy wind speed quality metric that summarizes the passed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindSpeedNullNAQM,"Buoy wind speed quality metric that summarizes when the null test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindSpeedGapFailQM,"Buoy wind speed quality metric that summarizes the failed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindSpeedGapPassQM,"Buoy wind speed quality metric that summarizes the passed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindSpeedGapNAQM,"Buoy wind speed quality metric that summarizes when the gap test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindSpeedSpikeFailQM,"Buoy wind speed quality metric that summarizes the failed outcomes of the spike test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindSpeedSpikePassQM,"Buoy wind speed quality metric that summarizes the passed outcomes of the spike test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindSpeedSpikeNAQM,"Buoy wind speed quality metric that summarizes when the spike test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindSpeedValidCalFailQM,"Buoy wind speed quality metric that summarizes the failed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindSpeedValidCalPassQM,"Buoy wind speed quality metric that summarizes the passed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindSpeedValidCalNAQM,"Buoy wind speed quality metric that summarizes when the valid calibration check could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindSpeedAlphaQM,"Buoy wind speed quality metric detailing the outcomes of the alpha quality flag over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+WSDBuoy_2min,buoyWindSpeedBetaQM,"Buoy wind speed quality metric detailing the outcomes of the beta quality flag over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+WSDBuoy_2min,buoyWindSpeedFinalQF,"Buoy wind speed quality flag indicating whether a data product has passed or failed an overall assessment of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass)",unsigned integer,NA,basic
+WSDBuoy_2min,buoyWindSpeedFinalQFSciRvw,"Buoy wind speed quality flag indicating whether a data product has failed a science review of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass/not-reviewed)",unsigned integer,NA,expanded
+WSDBuoy_2min,buoyWindDirMean,"Arithmetic mean of wind direction on buoy",real,degree,basic
+WSDBuoy_2min,buoyWindDirVariance,"Variance in wind direction on buoy",real,degreesSquared,basic
+WSDBuoy_2min,buoyWindDirNumPts,"Number of points used to calculate the arithmetic mean of wind direction on buoy",real,number,basic
+WSDBuoy_2min,buoyWindDirExpUncert,"Expanded uncertainty for wind direction on buoy",real,degree,basic
+WSDBuoy_2min,buoyWindDirStdErMean,"Standard error of the mean for wind direction on buoy",real,degree,basic
+WSDBuoy_2min,buoyWindDirRangeFailQM,"Buoy wind direction quality metric that summarizes the failed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindDirRangePassQM,"Buoy wind direction quality metric that summarizes the passed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindDirRangeNAQM,"Buoy wind direction quality metric that summarizes when the range test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindDirPersistenceFailQM,"Buoy wind direction quality metric that summarizes  the failed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindDirPersistencePassQM,"Buoy wind direction quality metric that summarizes the passed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindDirPersistenceNAQM,"Buoy wind direction quality metric that summarizes when the persistence test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindDirNullFailQM,"Buoy wind direction quality metric that summarizes the failed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindDirNullPassQM,"Buoy wind direction quality metric that summarizes the passed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindDirNullNAQM,"Buoy wind direction quality metric that summarizes when the null test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindDirGapFailQM,"Buoy wind direction quality metric that summarizes the failed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindDirGapPassQM,"Buoy wind direction quality metric that summarizes the passed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindDirGapNAQM,"Buoy wind direction quality metric that summarizes when the gap test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindDirCalmWindFailQM,"Buoy wind direction quality metric that summarizes the failed outcomes of the calm wind test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindDirCalmWindPassQM,"Buoy wind direction quality metric that summarizes the passed outcomes of the calm wind test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindDirCalmWindNAQM,"Buoy wind direction quality metric that summarizes when the calm wind test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindDirDeadZoneFailQM,"Buoy wind direction quality metric that summarizes the failed outcomes of the dead band test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindDirDeadZonePassQM,"Buoy wind direction quality metric that summarizes the passed outcomes of the dead band test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindDirDeadZoneNAQM,"Buoy wind direction quality metric that summarizes when the dead band test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindDirValidCalFailQM,"Buoy wind direction quality metric that summarizes the failed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindDirValidCalPassQM,"Buoy wind direction quality metric that summarizes the passed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindDirValidCalNAQM,"Buoy wind direction quality metric that summarizes when the valid calibration check could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyWindDirAlphaQM,"Buoy wind direction quality metric detailing the outcomes of the alpha quality flag over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+WSDBuoy_2min,buoyWindDirBetaQM,"Buoy wind direction quality metric detailing the outcomes of the beta quality flag over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+WSDBuoy_2min,buoyWindDirFinalQF,"Buoy wind direction quality flag indicating whether a data product has passed or failed an overall assessment of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass)",unsigned integer,NA,basic
+WSDBuoy_2min,buoyWindDirFinalQFSciRvw,"Buoy wind direction quality flag indicating whether a data product has failed a science review of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass/not-reviewed)",unsigned integer,NA,expanded
+WSDBuoy_2min,buoyCompRangeFailQM,"Buoy compass quality metric that summarizes the failed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyCompRangePassQM,"Buoy compass quality metric that summarizes the passed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyCompRangeNAQM,"Buoy compass quality metric that summarizes when the range test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyCompPersistenceFailQM,"Buoy compass quality metric that summarizes  the failed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyCompPersistencePassQM,"Buoy compass quality metric that summarizes the passed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyCompPersistenceNAQM,"Buoy compass quality metric that summarizes when the persistence test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyCompNullFailQM,"Buoy compass quality metric that summarizes the failed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyCompNullPassQM,"Buoy compass quality metric that summarizes the passed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyCompNullNAQM,"Buoy compass quality metric that summarizes when the null test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyCompGapFailQM,"Buoy compass quality metric that summarizes the failed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyCompGapPassQM,"Buoy compass quality metric that summarizes the passed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_2min,buoyCompGapNAQM,"Buoy compass quality metric that summarizes when the gap test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,startDateTime,"Date and time at which a sampling is initiated",dateTime,NA,basic
+WSDBuoy_30min,endDateTime,"Date and time at which a sampling is completed",dateTime,NA,basic
+WSDBuoy_30min,buoyWindSpeedMean,"Arithmetic mean of wind speed on buoy",real,metersPerSecond,basic
+WSDBuoy_30min,buoyWindSpeedMinimum,"Minimum wind speed on buoy",real,metersPerSecond,basic
+WSDBuoy_30min,buoyWindSpeedMaximum,"Maximum wind speed on buoy",real,metersPerSecond,basic
+WSDBuoy_30min,buoyWindSpeedVariance,"Variance in wind speed on buoy",real,metersPerSecondSquared,basic
+WSDBuoy_30min,buoyWindSpeedNumPts,"Number of points used to calculate the arithmetic mean of wind speed on buoy",real,number,basic
+WSDBuoy_30min,buoyWindSpeedExpUncert,"Expanded uncertainty for wind speed on buoy",real,metersPerSecond,basic
+WSDBuoy_30min,buoyWindSpeedStdErMean,"Standard error of the mean for wind speed on buoy",real,metersPerSecond,basic
+WSDBuoy_30min,buoyWindSpeedRangeFailQM,"Buoy wind speed quality metric that summarizes the failed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindSpeedRangePassQM,"Buoy wind speed quality metric that summarizes the passed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindSpeedRangeNAQM,"Buoy wind speed quality metric that summarizes when the range test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindSpeedPersistenceFailQM,"Buoy wind speed quality metric that summarizes  the failed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindSpeedPersistencePassQM,"Buoy wind speed quality metric that summarizes the passed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindSpeedPersistenceNAQM,"Buoy wind speed quality metric that summarizes when the persistence test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindSpeedNullFailQM,"Buoy wind speed quality metric that summarizes the failed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindSpeedNullPassQM,"Buoy wind speed quality metric that summarizes the passed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindSpeedNullNAQM,"Buoy wind speed quality metric that summarizes when the null test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindSpeedGapFailQM,"Buoy wind speed quality metric that summarizes the failed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindSpeedGapPassQM,"Buoy wind speed quality metric that summarizes the passed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindSpeedGapNAQM,"Buoy wind speed quality metric that summarizes when the gap test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindSpeedSpikeFailQM,"Buoy wind speed quality metric that summarizes the failed outcomes of the spike test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindSpeedSpikePassQM,"Buoy wind speed quality metric that summarizes the passed outcomes of the spike test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindSpeedSpikeNAQM,"Buoy wind speed quality metric that summarizes when the spike test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindSpeedValidCalFailQM,"Buoy wind speed quality metric that summarizes the failed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindSpeedValidCalPassQM,"Buoy wind speed quality metric that summarizes the passed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindSpeedValidCalNAQM,"Buoy wind speed quality metric that summarizes when the valid calibration check could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindSpeedAlphaQM,"Buoy wind speed quality metric detailing the outcomes of the alpha quality flag over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+WSDBuoy_30min,buoyWindSpeedBetaQM,"Buoy wind speed quality metric detailing the outcomes of the beta quality flag over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+WSDBuoy_30min,buoyWindSpeedFinalQF,"Buoy wind speed quality flag indicating whether a data product has passed or failed an overall assessment of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass)",unsigned integer,NA,basic
+WSDBuoy_30min,buoyWindSpeedFinalQFSciRvw,"Buoy wind speed quality flag indicating whether a data product has failed a science review of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass/not-reviewed)",unsigned integer,NA,expanded
+WSDBuoy_30min,buoyWindDirMean,"Arithmetic mean of wind direction on buoy",real,degree,basic
+WSDBuoy_30min,buoyWindDirVariance,"Variance in wind direction on buoy",real,degreesSquared,basic
+WSDBuoy_30min,buoyWindDirNumPts,"Number of points used to calculate the arithmetic mean of wind direction on buoy",real,number,basic
+WSDBuoy_30min,buoyWindDirExpUncert,"Expanded uncertainty for wind direction on buoy",real,degree,basic
+WSDBuoy_30min,buoyWindDirStdErMean,"Standard error of the mean for wind direction on buoy",real,degree,basic
+WSDBuoy_30min,buoyWindDirRangeFailQM,"Buoy wind direction quality metric that summarizes the failed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindDirRangePassQM,"Buoy wind direction quality metric that summarizes the passed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindDirRangeNAQM,"Buoy wind direction quality metric that summarizes when the range test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindDirPersistenceFailQM,"Buoy wind direction quality metric that summarizes  the failed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindDirPersistencePassQM,"Buoy wind direction quality metric that summarizes the passed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindDirPersistenceNAQM,"Buoy wind direction quality metric that summarizes when the persistence test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindDirNullFailQM,"Buoy wind direction quality metric that summarizes the failed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindDirNullPassQM,"Buoy wind direction quality metric that summarizes the passed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindDirNullNAQM,"Buoy wind direction quality metric that summarizes when the null test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindDirGapFailQM,"Buoy wind direction quality metric that summarizes the failed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindDirGapPassQM,"Buoy wind direction quality metric that summarizes the passed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindDirGapNAQM,"Buoy wind direction quality metric that summarizes when the gap test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindDirValidCalFailQM,"Buoy wind direction quality metric that summarizes the failed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindDirValidCalPassQM,"Buoy wind direction quality metric that summarizes the passed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindDirValidCalNAQM,"Buoy wind direction quality metric that summarizes when the valid calibration check could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindDirCalmWindFailQM,"Buoy wind direction quality metric that summarizes the failed outcomes of the calm wind test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindDirCalmWindPassQM,"Buoy wind direction quality metric that summarizes the passed outcomes of the calm wind test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindDirCalmWindNAQM,"Buoy wind direction quality metric that summarizes when the calm wind test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindDirDeadZoneFailQM,"Buoy wind direction quality metric that summarizes the failed outcomes of the dead band test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindDirDeadZonePassQM,"Buoy wind direction quality metric that summarizes the passed outcomes of the dead band test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindDirDeadZoneNAQM,"Buoy wind direction quality metric that summarizes when the dead band test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyWindDirAlphaQM,"Buoy wind direction quality metric detailing the outcomes of the alpha quality flag over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+WSDBuoy_30min,buoyWindDirBetaQM,"Buoy wind direction quality metric detailing the outcomes of the beta quality flag over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+WSDBuoy_30min,buoyWindDirFinalQF,"Buoy wind direction quality flag indicating whether a data product has passed or failed an overall assessment of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass)",unsigned integer,NA,basic
+WSDBuoy_30min,buoyWindDirFinalQFSciRvw,"Buoy wind direction quality flag indicating whether a data product has failed a science review of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass/not-reviewed)",unsigned integer,NA,expanded
+WSDBuoy_30min,buoyCompRangeFailQM,"Buoy compass quality metric that summarizes the failed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyCompRangePassQM,"Buoy compass quality metric that summarizes the passed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyCompRangeNAQM,"Buoy compass quality metric that summarizes when the range test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyCompPersistenceFailQM,"Buoy compass quality metric that summarizes  the failed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyCompPersistencePassQM,"Buoy compass quality metric that summarizes the passed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyCompPersistenceNAQM,"Buoy compass quality metric that summarizes when the persistence test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyCompNullFailQM,"Buoy compass quality metric that summarizes the failed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyCompNullPassQM,"Buoy compass quality metric that summarizes the passed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyCompNullNAQM,"Buoy compass quality metric that summarizes when the null test could not be run over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyCompGapFailQM,"Buoy compass quality metric that summarizes the failed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyCompGapPassQM,"Buoy compass quality metric that summarizes the passed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+WSDBuoy_30min,buoyCompGapNAQM,"Buoy compass quality metric that summarizes when the gap test could not be run over the averaging period, as a percent",real,percent,expanded

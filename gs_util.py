@@ -84,7 +84,7 @@ def cal_rs_obs(qh, qe, ta, rh, pa,RA):
     arr_es = ac('es', p=pa, T=ta)
     arr_vpd = arr_es-arr_e
     #
-    ser_rs_1 = (ser_des_dTa / ser_gamma) * (qh / qe - 1) * rav
+    ser_rs_1 = ((ser_des_dTa / ser_gamma)*(qh / qe) - 1) * rav
     ser_rs_2 = (val_rho * val_cp * arr_vpd / (ser_gamma * qe))
     ser_rs = ser_rs_1 + ser_rs_2
 
@@ -541,3 +541,79 @@ def gs_plot_test(g1,g2,g3,g4,g5,g6,g_max,s1,name,year,alpha=1,helen=0):
     ax=axs[3]
     df_obs[df_obs.qe>0].qe.plot(ax=ax,label='obs')
     ax.legend()
+    
+    
+def gs_plot_test_1(g1,g2,g3,g4,g5,g6,g_max,s1,name,year,alpha=1,helen=0):
+
+    path_runcontrol = Path('runs/run'+'/') / 'RunControl.nml'
+    df_state_init = sp.init_supy(path_runcontrol)
+    df_state_init,level=modify_attr(df_state_init,name)
+    grid = df_state_init.index[0]
+    df_forcing_run = sp.load_forcing_grid(path_runcontrol, grid)
+
+
+    df_state_init.g1=g1*alpha
+    df_state_init.g2=g2
+    df_state_init.g3=g3
+    df_state_init.g4=g4
+    df_state_init.g5=g5
+    df_state_init.g6=g6
+    f_state_init=modify_attr_2(df_state_init,g_max,s1)
+    df_output, df_state_final = sp.run_supy(df_forcing_run, df_state_init, save_state=False)
+
+
+    df_obs=pd.read_csv('runs/run'+'/Input/'+'kc'+'_2012_data_60.txt',sep=' ',
+                                    parse_dates={'datetime': [0, 1, 2, 3]},
+                                    keep_date_col=True,
+                                    date_parser=func_parse_date)
+
+    df_obs= df_obs.set_index('datetime')
+
+    fig,axs=plt.subplots(4,1,figsize=(8,15))
+    plt.subplots_adjust(hspace=.8)
+    plt.rc('font', size=15)
+
+    ax=axs[0]
+    df_obs_temp=df_obs.replace(-999,np.nan)
+    
+    df=df_output.SUEWS.loc[grid,:]
+    df=df.resample('1h',closed='left',label='right').mean()
+    
+    IQR_compare('qe','QE',df_obs_temp,df,ax)
+    ax.legend()
+    ax.set_title('QE (test data set-fitted g1-g6)')
+    ax.set_ylabel('QE (W m$^{-2}$)')
+    ax.set_xlabel('Time (UTC)')
+
+
+    df=df_output.SUEWS.loc[grid,:]
+    df=df.resample('1h',closed='left',label='right').mean()
+    df_temp=df_obs_temp[df_obs_temp.qe<700]
+    
+    plt.rc('font', size=15)
+
+    data_for_plot={'IQR':{'obs':df_obs_temp,'model':df}}
+    data_for_plot['obs_sim']={'obs':df_temp,'model':df.loc[df_temp.index,:]}
+
+    if helen==0:
+        with open('surface_conductance/'+name+'-'+str(year)+'-new','wb') as f:
+            pickle.dump(data_for_plot, f)
+    elif helen==1:
+        with open('surface_conductance/'+name+'-'+str(year)+'-Helen','wb') as f:
+            pickle.dump(data_for_plot, f)
+
+    ax=axs[1]
+    obs_sim('qe','QE',df_temp,df.loc[df_temp.index,:],ax)
+
+    ax.set_ylabel('Model')
+    ax.set_xlabel('Obs')
+    ax.set_title('QE-test data-all season-MAE='+str(np.round(np.mean(abs(df.loc[df_temp.index,:].QE-df_temp.qe)),2)))
+    
+
+    ax=axs[2]
+    df_output.SUEWS.QE.loc[grid,:].resample('1h',closed='left',label='right').mean().plot(ax=ax,label='model')
+    ax.legend()
+    ax=axs[3]
+    df_obs[df_obs.qe>0].qe.plot(ax=ax,label='obs')
+    ax.legend()
+

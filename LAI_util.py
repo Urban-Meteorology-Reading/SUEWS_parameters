@@ -71,8 +71,10 @@ def read_data(year, name):
 
     df = pd.read_csv('MODIS_LAI_AmeriFlux/statistics_Lai_500m-' + name +
                      '.csv')
-    df.columns = ['product'
-                  ] + [i.split(' ')[1] for i in df.columns if i != 'product']
+    if name!='crop':
+        df.columns = ['product'
+                      ] + [i.split(' ')[1] for i in df.columns if i != 'product']
+        
     df = df.filter(['modis_date', 'value_mean'])
 
     df_period = df[[i.startswith('A' + str(year)) for i in df.modis_date]]
@@ -195,13 +197,13 @@ def LAI_tune(year,name):
     
     try:
         max_y=30
-        for gdd_day in [90,100,110,120,130,140,150]:
+        for gdd_day in [90,100,110,120,130,140,150,170,180,210,260]:
             a=GDD_model[GDD_model.DOY==gdd_day][nameGDD]
             plt.plot([gdd_day,gdd_day],[-15,max_y],color='r')
             plt.annotate(str(np.round(a.values[0],0)),(gdd_day-5,-14),color='r',rotation=90)
 
 
-        for sdd_day in [300,310,320,330,340,350,360]:
+        for sdd_day in [150,170,180,200,250,270,300,310,320,330,340,350,360]:
             a=SDD_model[SDD_model.DOY==sdd_day][nameSDD]
             plt.plot([sdd_day,sdd_day],[-15,max_y],color='b')
             plt.annotate(str(np.round(a.values[0],0)),(sdd_day-5,-14),color='b',rotation=90)

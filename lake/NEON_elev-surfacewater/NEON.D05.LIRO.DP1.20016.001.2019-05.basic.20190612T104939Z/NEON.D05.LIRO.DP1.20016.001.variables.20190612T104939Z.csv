@@ -1,0 +1,69 @@
+table,fieldName,description,dataType,units,downloadPkg
+EOS_5_min,startDateTime,"Date and time at which a sampling is initiated",dateTime,NA,basic
+EOS_5_min,endDateTime,"Date and time at which a sampling is completed",dateTime,NA,basic
+EOS_5_min,surfacewaterElevMean,"Arithmetic mean of elevation of surfacewater",real,meter,basic
+EOS_5_min,surfacewaterElevMinimum,"Minimum elevation of surfacewater",real,meter,basic
+EOS_5_min,surfacewaterElevMaximum,"Maximum elevation of surfacewater",real,meter,basic
+EOS_5_min,surfacewaterElevVariance,"Variance in elevation of surfacewater",real,metersSquared,basic
+EOS_5_min,surfacewaterElevNumPts,"Number of points used to calculate the arithmetic mean of elevation of surfacewater",real,number,basic
+EOS_5_min,surfacewaterElevExpUncert,"Expanded uncertainty for elevation of surfacewater",real,meter,basic
+EOS_5_min,surfacewaterElevStdErMean,"Standard error of the mean for elevation of surfacewater",real,meter,basic
+EOS_5_min,sWatElevRangeFailQM,"Quality metric that summarizes the failed outcomes of the range test for elevation of surfacewater over the averaging period, as a percent",real,percent,expanded
+EOS_5_min,sWatElevRangePassQM,"Quality metric that summarizes the passed outcomes of the range test for elevation of surfacewater over the averaging period, as a percent",real,percent,expanded
+EOS_5_min,sWatElevRangeNAQM,"Quality metric that summarizes when the range test for elevation of surfacewater could not be run over the averaging period, as a percent",real,percent,expanded
+EOS_5_min,sWatElevPersistenceFailQM,"Quality metric that summarizes the failed outcomes of the persistence test for elevation of surfacewater over the averaging period, as a percent",real,percent,expanded
+EOS_5_min,sWatElevPersistencePassQM,"Quality metric that summarizes the passed outcomes of the persistence test for elevation of surfacewater over the averaging period, as a percent",real,percent,expanded
+EOS_5_min,sWatElevPersistenceNAQM,"Quality metric that summarizes when the persistence test for elevation of surfacewater could not be run over the averaging period, as a percent",real,percent,expanded
+EOS_5_min,sWatElevStepFailQM,"Quality metric that summarizes the failed outcomes of the step test for elevation of surfacewater over the averaging period, as a percent",real,percent,expanded
+EOS_5_min,sWatElevStepPassQM,"Quality metric that summarizes the passed outcomes of the step test for elevation of surfacewater over the averaging period, as a percent",real,percent,expanded
+EOS_5_min,sWatElevStepNAQM,"Quality metric that summarizes when the step test for elevation of surfacewater could not be run over the averaging period, as a percent",real,percent,expanded
+EOS_5_min,sWatElevNullFailQM,"Quality metric that summarizes the failed outcomes of the null test for elevation of surfacewater over the averaging period, as a percent",real,percent,expanded
+EOS_5_min,sWatElevNullPassQM,"Quality metric that summarizes the passed outcomes of the null test for elevation of surfacewater over the averaging period, as a percent",real,percent,expanded
+EOS_5_min,sWatElevNullNAQM,"Quality metric that summarizes when the null test for elevation of surfacewater could not be run over the averaging period, as a percent",real,percent,expanded
+EOS_5_min,sWatElevGapFailQM,"Quality metric that summarizes the failed outcomes of the gap test for elevation of surfacewater over the averaging period, as a percent",real,percent,expanded
+EOS_5_min,sWatElevGapPassQM,"Quality metric that summarizes the passed outcomes of the gap test for elevation of surfacewater over the averaging period, as a percent",real,percent,expanded
+EOS_5_min,sWatElevGapNAQM,"Quality metric that summarizes when the gap test for elevation of surfacewater could not be run over the averaging period, as a percent",real,percent,expanded
+EOS_5_min,sWatElevSpikeFailQM,"Quality metric that summarizes the failed outcomes of the spike test for elevation of surfacewater over the averaging period, as a percent",real,percent,expanded
+EOS_5_min,sWatElevSpikePassQM,"Quality metric that summarizes the passed outcomes of the spike test for elevation of surfacewater over the averaging period, as a percent",real,percent,expanded
+EOS_5_min,sWatElevSpikeNAQM,"Quality metric that summarizes when the spike test for elevation of surfacewater could not be run over the averaging period, as a percent",real,percent,expanded
+EOS_5_min,validCalFailQM,"Quality metric that summarizes the failed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+EOS_5_min,validCalPassQM,"Quality metric that summarizes the passed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+EOS_5_min,validCalNAQM,"Quality metric that summarizes when the valid calibration check could not be run over the averaging period, as a percent",real,percent,expanded
+EOS_5_min,sWatElevAlphaQM,"Quality metric detailing the outcomes of the alpha quality flag for elevation of surfacewater over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+EOS_5_min,sWatElevBetaQM,"Quality metric detailing the outcomes of the beta quality flag for elevation of surfacewater over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+EOS_5_min,sWatElevFinalQF,"Quality flag indicating whether elevation of surfacewater has passed or failed an overall assessment of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass)",unsigned integer,NA,basic
+EOS_5_min,sWatElevFinalQFSciRvw,"Suface water elevation quality flag indicating whether a data product has failed a science review of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass/not-reviewed)",unsigned integer,NA,expanded
+EOS_30_min,startDateTime,"Date and time at which a sampling is initiated",dateTime,NA,basic
+EOS_30_min,endDateTime,"Date and time at which a sampling is completed",dateTime,NA,basic
+EOS_30_min,surfacewaterElevMean,"Arithmetic mean of elevation of surfacewater",real,meter,basic
+EOS_30_min,surfacewaterElevMinimum,"Minimum elevation of surfacewater",real,meter,basic
+EOS_30_min,surfacewaterElevMaximum,"Maximum elevation of surfacewater",real,meter,basic
+EOS_30_min,surfacewaterElevVariance,"Variance in elevation of surfacewater",real,metersSquared,basic
+EOS_30_min,surfacewaterElevNumPts,"Number of points used to calculate the arithmetic mean of elevation of surfacewater",real,number,basic
+EOS_30_min,surfacewaterElevExpUncert,"Expanded uncertainty for elevation of surfacewater",real,meter,basic
+EOS_30_min,surfacewaterElevStdErMean,"Standard error of the mean for elevation of surfacewater",real,meter,basic
+EOS_30_min,sWatElevRangeFailQM,"Quality metric that summarizes the failed outcomes of the range test for elevation of surfacewater over the averaging period, as a percent",real,percent,expanded
+EOS_30_min,sWatElevRangePassQM,"Quality metric that summarizes the passed outcomes of the range test for elevation of surfacewater over the averaging period, as a percent",real,percent,expanded
+EOS_30_min,sWatElevRangeNAQM,"Quality metric that summarizes when the range test for elevation of surfacewater could not be run over the averaging period, as a percent",real,percent,expanded
+EOS_30_min,sWatElevPersistenceFailQM,"Quality metric that summarizes the failed outcomes of the persistence test for elevation of surfacewater over the averaging period, as a percent",real,percent,expanded
+EOS_30_min,sWatElevPersistencePassQM,"Quality metric that summarizes the passed outcomes of the persistence test for elevation of surfacewater over the averaging period, as a percent",real,percent,expanded
+EOS_30_min,sWatElevPersistenceNAQM,"Quality metric that summarizes when the persistence test for elevation of surfacewater could not be run over the averaging period, as a percent",real,percent,expanded
+EOS_30_min,sWatElevStepFailQM,"Quality metric that summarizes the failed outcomes of the step test for elevation of surfacewater over the averaging period, as a percent",real,percent,expanded
+EOS_30_min,sWatElevStepPassQM,"Quality metric that summarizes the passed outcomes of the step test for elevation of surfacewater over the averaging period, as a percent",real,percent,expanded
+EOS_30_min,sWatElevStepNAQM,"Quality metric that summarizes when the step test for elevation of surfacewater could not be run over the averaging period, as a percent",real,percent,expanded
+EOS_30_min,sWatElevNullFailQM,"Quality metric that summarizes the failed outcomes of the null test for elevation of surfacewater over the averaging period, as a percent",real,percent,expanded
+EOS_30_min,sWatElevNullPassQM,"Quality metric that summarizes the passed outcomes of the null test for elevation of surfacewater over the averaging period, as a percent",real,percent,expanded
+EOS_30_min,sWatElevNullNAQM,"Quality metric that summarizes when the null test for elevation of surfacewater could not be run over the averaging period, as a percent",real,percent,expanded
+EOS_30_min,sWatElevGapFailQM,"Quality metric that summarizes the failed outcomes of the gap test for elevation of surfacewater over the averaging period, as a percent",real,percent,expanded
+EOS_30_min,sWatElevGapPassQM,"Quality metric that summarizes the passed outcomes of the gap test for elevation of surfacewater over the averaging period, as a percent",real,percent,expanded
+EOS_30_min,sWatElevGapNAQM,"Quality metric that summarizes when the gap test for elevation of surfacewater could not be run over the averaging period, as a percent",real,percent,expanded
+EOS_30_min,sWatElevSpikeFailQM,"Quality metric that summarizes the failed outcomes of the spike test for elevation of surfacewater over the averaging period, as a percent",real,percent,expanded
+EOS_30_min,sWatElevSpikePassQM,"Quality metric that summarizes the passed outcomes of the spike test for elevation of surfacewater over the averaging period, as a percent",real,percent,expanded
+EOS_30_min,sWatElevSpikeNAQM,"Quality metric that summarizes when the spike test for elevation of surfacewater could not be run over the averaging period, as a percent",real,percent,expanded
+EOS_30_min,validCalFailQM,"Quality metric that summarizes the failed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+EOS_30_min,validCalPassQM,"Quality metric that summarizes the passed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+EOS_30_min,validCalNAQM,"Quality metric that summarizes when the valid calibration check could not be run over the averaging period, as a percent",real,percent,expanded
+EOS_30_min,sWatElevAlphaQM,"Quality metric detailing the outcomes of the alpha quality flag for elevation of surfacewater over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+EOS_30_min,sWatElevBetaQM,"Quality metric detailing the outcomes of the beta quality flag for elevation of surfacewater over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+EOS_30_min,sWatElevFinalQF,"Quality flag indicating whether elevation of surfacewater has passed or failed an overall assessment of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass)",unsigned integer,NA,basic
+EOS_30_min,sWatElevFinalQFSciRvw,"Suface water elevation quality flag indicating whether a data product has failed a science review of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass/not-reviewed)",unsigned integer,NA,expanded
