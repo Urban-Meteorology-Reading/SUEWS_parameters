@@ -8,5 +8,6 @@ Currently investigated:
 - Parameters related to Surface Conductance for vegetated surfaces (g1-g6)
 
 
-SuPy-driver 2019a14
-SuPy   2019.10.24
+SuPy-driver 2019a18
+SuPy   2019.11.24
+Pandas  0.25.3
