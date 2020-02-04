@@ -1,0 +1,21 @@
+name: SUEWS_parameters
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.7
+  - jupyter
+  - pip
+  - geopandas
+  - matplotlib
+  - scipy
+  - scikit-learn
+  - pip:
+    - supy==2019.11.24
+    - pandas==0.25.3
+    - atmosp
+    - platypus
+    - lmfit
+    
+    
+
