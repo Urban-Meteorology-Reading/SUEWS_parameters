@@ -14,5 +14,5 @@ dependencies:
     - supy==2019.11.24
     - pandas==0.25.3
     - atmosp
-    - platypus
+    - platypus-opt
     - lmfit
