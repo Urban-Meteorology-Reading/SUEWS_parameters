@@ -1,0 +1,36 @@
+2020-02-03 10:43:00,418 — SuPy — INFO — All cache cleared.
+2020-02-03 10:43:02,749 — SuPy — INFO — All cache cleared.
+2020-02-03 10:43:04,713 — SuPy — INFO — ====================
+2020-02-03 10:43:04,715 — SuPy — INFO — Simulation period:
+2020-02-03 10:43:04,717 — SuPy — INFO —   Start: 2016-06-10 00:00:00
+2020-02-03 10:43:04,720 — SuPy — INFO —   End: 2016-11-05 00:00:00
+2020-02-03 10:43:04,727 — SuPy — INFO — 
+2020-02-03 10:43:04,732 — SuPy — INFO — No. of grids: 1
+2020-02-03 10:43:04,737 — SuPy — INFO — SuPy is running in serial mode
+2020-02-03 10:43:14,140 — SuPy — INFO — Execution time: 9.4 s
+2020-02-03 10:43:14,141 — SuPy — INFO — ====================
+
+2020-02-03 10:43:18,814 — SuPy — INFO — All cache cleared.
+2020-02-03 10:43:19,882 — SuPy — INFO — All cache cleared.
+2020-02-03 10:43:22,003 — SuPy — INFO — ====================
+2020-02-03 10:43:22,005 — SuPy — INFO — Simulation period:
+2020-02-03 10:43:22,006 — SuPy — INFO —   Start: 2016-11-30 00:00:00
+2020-02-03 10:43:22,008 — SuPy — INFO —   End: 2017-05-31 00:00:00
+2020-02-03 10:43:22,008 — SuPy — INFO — 
+2020-02-03 10:43:22,010 — SuPy — INFO — No. of grids: 1
+2020-02-03 10:43:22,011 — SuPy — INFO — SuPy is running in serial mode
+2020-02-03 10:43:32,702 — SuPy — INFO — Execution time: 10.7 s
+2020-02-03 10:43:32,703 — SuPy — INFO — ====================
+
+2020-02-03 10:43:45,779 — SuPy — INFO — All cache cleared.
+2020-02-03 10:43:46,656 — SuPy — INFO — All cache cleared.
+2020-02-03 10:43:48,647 — SuPy — INFO — ====================
+2020-02-03 10:43:48,648 — SuPy — INFO — Simulation period:
+2020-02-03 10:43:48,649 — SuPy — INFO —   Start: 2015-06-10 00:00:00
+2020-02-03 10:43:48,649 — SuPy — INFO —   End: 2015-11-07 00:00:00
+2020-02-03 10:43:48,651 — SuPy — INFO — 
+2020-02-03 10:43:48,652 — SuPy — INFO — No. of grids: 1
+2020-02-03 10:43:48,653 — SuPy — INFO — SuPy is running in serial mode
+2020-02-03 10:43:58,015 — SuPy — INFO — Execution time: 9.4 s
+2020-02-03 10:43:58,016 — SuPy — INFO — ====================
+
