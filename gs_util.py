@@ -483,7 +483,7 @@ def gs_plot_test(g1,g2,g3,g4,g5,g6,g_max,s1,name,year,alpha=1,helen=0):
     df_state_init.g4=g4
     df_state_init.g5=g5
     df_state_init.g6=g6
-    f_state_init=modify_attr_2(df_state_init,g_max,s1)
+    df_state_init=modify_attr_2(df_state_init,g_max,s1)
     df_output, df_state_final = sp.run_supy(df_forcing_run, df_state_init, save_state=False)
 
 
