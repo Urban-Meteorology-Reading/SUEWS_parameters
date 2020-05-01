@@ -15,6 +15,7 @@ from platypus.algorithms import *
 import random
 import pickle
 import os
+from IPython.display import clear_output
 from shutil import copyfile
 
 
@@ -468,13 +469,69 @@ def modify_attr_2(df_state_init,g_max,s1):
     return df_state_init
 
 
-def gs_plot_test(g1,g2,g3,g4,g5,g6,g_max,s1,name,year,alpha=1,helen=0):
+
+
+def run_LAI_states(grid,z0f,zdf,df_forcing_run,df_state_init,name,year,doy_LAI,path_runcontrol):
+    
+    
+    start_date=datetime.datetime(year, 1, 1) + datetime.timedelta(1 - 1)
+    all_attrs = pd.read_csv('all_attrs.csv')
+    attrs_site = all_attrs[all_attrs.site == name]
+    df_state_init.loc[:,'laicalcyes']=0
+    if attrs_site.land.values[0]=='EveTr':
+        level=0
+    elif attrs_site.land.values[0]=='DecTr':
+        level=1
+    elif attrs_site.land.values[0]=='Grass':
+        level=2
+    mi=df_state_init.loc[:,'laimin'].values[0][level]
+    ma=df_state_init.loc[:,'laimax'].values[0][level]
+    df_state_init.loc[:,'laimin']=[mi,mi,mi]
+    df_state_init.loc[:,'laimax']=[ma,ma,ma]
+    
+    
+    
+    counter=0
+    all_LAI_output=pd.DataFrame()
+
+    for idx,end_day in enumerate(doy_LAI):
+        end_date=datetime.datetime(year, 1, 1) + datetime.timedelta(int(end_day)- 1)
+        print(start_date,end_date)
+
+        if counter>0:
+            final_state = df_state_final[df_state_init.columns.levels[0]].iloc[1]
+            df_state_init.iloc[0] = final_state
+
+
+        df_state_init.loc[:,'z0m_in']=attrs_site.height.values[0]*z0f[counter]
+        df_state_init.loc[:,'zdm_in']=attrs_site.height.values[0]*zdf[counter]
+        df_output, df_state_final = sp.run_supy(df_forcing_run.loc[start_date:end_date], df_state_init, save_state=False)
+
+
+        all_LAI_output=all_LAI_output.append(df_output.SUEWS.loc[grid])
+
+        start_date=end_date+datetime.timedelta(1)
+        counter+=1
+
+    end_date=datetime.datetime(year, 1, 1) + datetime.timedelta(365- 1)
+    print(start_date,end_date)
+    final_state = df_state_final[df_state_init.columns.levels[0]].iloc[1]
+    df_state_init.iloc[0] = final_state
+    df_state_init.loc[:,'z0m_in']=attrs_site.height.values[0]*z0f[counter]
+    df_state_init.loc[:,'zdm_in']=attrs_site.height.values[0]*zdf[counter]
+    df_output, df_state_final = sp.run_supy(df_forcing_run.loc[start_date:end_date], df_state_init, save_state=False)
+    all_LAI_output=all_LAI_output.append(df_output.SUEWS.loc[grid])
+    
+    return df_state_final,all_LAI_output
+
+
+
+def gs_plot_test(g1,g2,g3,g4,g5,g6,g_max,s1,name,year,z0f,zdf,doy_LAI,alpha=1,helen=0):
 
     path_runcontrol = Path('runs/run'+'/') / 'RunControl.nml'
     df_state_init = sp.init_supy(path_runcontrol)
     df_state_init,level=modify_attr(df_state_init,name)
     grid = df_state_init.index[0]
-    df_forcing_run = sp.load_forcing_grid(path_runcontrol, grid)
 
 
     df_state_init.g1=g1*alpha
@@ -484,8 +541,18 @@ def gs_plot_test(g1,g2,g3,g4,g5,g6,g_max,s1,name,year,alpha=1,helen=0):
     df_state_init.g5=g5
     df_state_init.g6=g6
     df_state_init=modify_attr_2(df_state_init,g_max,s1)
+    
+    
+    grid = df_state_init.index[0]
+    df_forcing_run = sp.load_forcing_grid(path_runcontrol, grid)
     df_output, df_state_final = sp.run_supy(df_forcing_run, df_state_init, save_state=False)
-
+    df_forcing_run.lai=df_output.SUEWS.loc[grid,:].LAI
+    
+    
+    
+    df_state_final,all_LAI_output=run_LAI_states(grid,z0f,zdf,df_forcing_run,
+                                                 df_state_init,name,year,doy_LAI,path_runcontrol)
+    clear_output()
 
     df_obs=pd.read_csv('runs/run'+'/Input/'+'kc'+'_2012_data_60.txt',sep=' ',
                                     parse_dates={'datetime': [0, 1, 2, 3]},
@@ -501,7 +568,7 @@ def gs_plot_test(g1,g2,g3,g4,g5,g6,g_max,s1,name,year,alpha=1,helen=0):
     ax=axs[0]
     df_obs_temp=df_obs.replace(-999,np.nan)
     
-    df=df_output.SUEWS.loc[grid,:]
+    df=all_LAI_output
     df=df.resample('1h',closed='left',label='right').mean()
     
     IQR_compare('qe','QE',df_obs_temp,df,ax)
@@ -511,21 +578,12 @@ def gs_plot_test(g1,g2,g3,g4,g5,g6,g_max,s1,name,year,alpha=1,helen=0):
     ax.set_xlabel('Time (UTC)')
 
 
-    df=df_output.SUEWS.loc[grid,:]
+    df=all_LAI_output
     df=df.resample('1h',closed='left',label='right').mean()
+    df=df.dropna(how='all')
     df_temp=df_obs_temp[df_obs_temp.qe<700]
     
     plt.rc('font', size=15)
-
-    data_for_plot={'IQR':{'obs':df_obs_temp,'model':df}}
-    data_for_plot['obs_sim']={'obs':df_temp,'model':df.loc[df_temp.index,:]}
-
-    if helen==0:
-        with open('outputs/surface_conductance/'+name+'-'+str(year)+'.pkl','wb') as f:
-            pickle.dump(data_for_plot, f)
-    elif helen==1:
-        with open('outputs/surface_conductance/'+name+'-'+str(year)+'-Helen.pkl','wb') as f:
-            pickle.dump(data_for_plot, f)
 
     ax=axs[1]
     obs_sim('qe','QE',df_temp,df.loc[df_temp.index,:],ax)
@@ -536,10 +594,11 @@ def gs_plot_test(g1,g2,g3,g4,g5,g6,g_max,s1,name,year,alpha=1,helen=0):
     
 
     ax=axs[2]
-    df_output.SUEWS.QE.loc[grid,:].resample('1h',closed='left',label='right').mean().plot(ax=ax,label='model')
-    ax.legend()
-    ax=axs[3]
-    df_obs[df_obs.qe>0].qe.plot(ax=ax,label='obs')
+    temp=all_LAI_output.QE.resample('1h',closed='left',label='right').mean()
+    ax.plot(temp.index,temp,label='model')
     ax.legend()
     
-  
+    ax=axs[3]
+    ax.plot(df_obs[df_obs.qe>0].qe.index,df_obs[df_obs.qe>0].qe,label='obs')
+    ax.legend()
+    
