@@ -51,6 +51,6 @@ jupyter notebook
 
 data that are used from various resources:
 
-1. AmeriFlux sites: https://ameriflux.lbl.gov/ (data in this repo)
-2. AsiaFlux sites: http://www.asiaflux.net/ (need to be requested, not available in this repo)
-3. Rice and wheat rice in Dongtai, China: `Duan, Z., Grimmond, S., Zhiqui, G., Sun, T., Liu, C. and Li, Y.: Radiation, energy, CO2 fluxes and energy balance closure over rice-wheat rotation: diurnal, seasonal and interannual (2014-2017) variations (under review), Agric. For. Meteorol., 2020` (need to be requested, not available in this repo)
+1. AmeriFlux sites (DecTr,EveTr and Grass): https://ameriflux.lbl.gov/ (data in this repo)
+2. AsiaFlux sites (Lake and rice field): http://www.asiaflux.net/ (need to be requested, not available in this repo)
+3. Rice and wheat fields in Dongtai, China: `Duan, Z., Grimmond, S., Zhiqui, G., Sun, T., Liu, C. and Li, Y.: Radiation, energy, CO2 fluxes and energy balance closure over rice-wheat rotation: diurnal, seasonal and interannual (2014-2017) variations (under review), Agric. For. Meteorol., 2020` (need to be requested, not available in this repo)
