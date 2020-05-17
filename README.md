@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/210683437.svg)](https://zenodo.org/badge/latestdoi/210683437)
+
 # SUEWS parameters
 Methods to calculate SUEWS related parameters
 
