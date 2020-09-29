@@ -1,0 +1,267 @@
+table,fieldName,description,dataType,units,downloadPkg
+SLRNRB_30min,startDateTime,"Date and time at which a sampling is initiated",dateTime,NA,basic
+SLRNRB_30min,endDateTime,"Date and time at which a sampling is completed",dateTime,NA,basic
+SLRNRB_30min,inSWMean,"Arithmetic mean of incoming shortwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_30min,inSWMinimum,"Minimum incoming shortwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_30min,inSWMaximum,"Maximum incoming shortwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_30min,inSWVariance,"Variance in incoming shortwave radiation",real,wattsPerSquareMeterSquared,basic
+SLRNRB_30min,inSWNumPts,"Number of points used to calculate the arithmetic mean of incoming shortwave radiation",real,number,basic
+SLRNRB_30min,inSWExpUncert,"Expanded uncertainty for incoming shortwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_30min,inSWStdErMean,"Standard error of the mean for incoming shortwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_30min,inSWRangeFailQM,"Incoming shortwave radiation quality metric that summarizes the failed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inSWRangePassQM,"Incoming shortwave radiation quality metric that summarizes the passed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inSWRangeNAQM,"Incoming shortwave radiation quality metric that summarizes when the range test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inSWPersistenceFailQM,"Incoming shortwave radiation quality metric that summarizes  the failed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inSWPersistencePassQM,"Incoming shortwave radiation quality metric that summarizes the passed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inSWPersistenceNAQM,"Incoming shortwave radiation quality metric that summarizes when the persistence test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inSWStepFailQM,"Incoming shortwave radiation quality metric that summarizes the failed outcomes of the step test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inSWStepPassQM,"Incoming shortwave radiation quality metric that summarizes the passed outcomes of the step test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inSWStepNAQM,"Incoming shortwave radiation quality metric that summarizes when the step test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inSWNullFailQM,"Incoming shortwave radiation quality metric that summarizes the failed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inSWNullPassQM,"Incoming shortwave radiation quality metric that summarizes the passed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inSWNullNAQM,"Incoming shortwave radiation quality metric that summarizes when the null test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inSWGapFailQM,"Incoming shortwave radiation quality metric that summarizes the failed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inSWGapPassQM,"Incoming shortwave radiation quality metric that summarizes the passed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inSWGapNAQM,"Incoming shortwave radiation quality metric that summarizes when the gap test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inSWSpikeFailQM,"Incoming shortwave radiation quality metric that summarizes the failed outcomes of the spike test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inSWSpikePassQM,"Incoming shortwave radiation quality metric that summarizes the passed outcomes of the spike test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inSWSpikeNAQM,"Incoming shortwave radiation quality metric that summarizes when the spike test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inSWValidCalFailQM,"Incoming shortwave radiation quality metric that summarizes the failed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inSWValidCalPassQM,"Incoming shortwave radiation quality metric that summarizes the passed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inSWValidCalNAQM,"Incoming shortwave radiation quality metric that summarizes when the valid calibration check could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inSWAlphaQM,"Incoming shortwave radiation quality metric detailing the outcomes of the alpha quality flag over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+SLRNRB_30min,inSWBetaQM,"Incoming shortwave radiation quality metric detailing the outcomes of the beta quality flag over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+SLRNRB_30min,inSWFinalQF,"Incoming shortwave radiation quality flag indicating whether a data product has passed or failed an overall assessment of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass)",unsigned integer,NA,basic
+SLRNRB_30min,inSWFinalQFSciRvw,"Incoming shortwave radiation quality flag indicating whether a data product has failed a science review of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass/not-reviewed)",unsigned integer,NA,expanded
+SLRNRB_30min,outSWMean,"Arithmetic mean of outgoing shortwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_30min,outSWMinimum,"Minimum outgoing shortwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_30min,outSWMaximum,"Maximum outgoing shortwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_30min,outSWVariance,"Variance in outgoing shortwave radiation",real,wattsPerSquareMeterSquared,basic
+SLRNRB_30min,outSWNumPts,"Number of points used to calculate the arithmetic mean of outgoing shortwave radiation",real,number,basic
+SLRNRB_30min,outSWExpUncert,"Expanded uncertainty for outgoing shortwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_30min,outSWStdErMean,"Standard error of the mean for outgoing shortwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_30min,outSWRangeFailQM,"Outgoing shortwave radiation quality metric that summarizes the failed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outSWRangePassQM,"Outgoing shortwave radiation quality metric that summarizes the passed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outSWRangeNAQM,"Outgoing shortwave radiation quality metric that summarizes when the range test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outSWPersistenceFailQM,"Outgoing shortwave radiation quality metric that summarizes  the failed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outSWPersistencePassQM,"Outgoing shortwave radiation quality metric that summarizes the passed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outSWPersistenceNAQM,"Outgoing shortwave radiation quality metric that summarizes when the persistence test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outSWStepFailQM,"Outgoing shortwave radiation quality metric that summarizes the failed outcomes of the step test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outSWStepPassQM,"Outgoing shortwave radiation quality metric that summarizes the passed outcomes of the step test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outSWStepNAQM,"Outgoing shortwave radiation quality metric that summarizes when the step test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outSWNullFailQM,"Outgoing shortwave radiation quality metric that summarizes the failed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outSWNullPassQM,"Outgoing shortwave radiation quality metric that summarizes the passed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outSWNullNAQM,"Outgoing shortwave radiation quality metric that summarizes when the null test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outSWGapFailQM,"Outgoing shortwave radiation quality metric that summarizes the failed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outSWGapPassQM,"Outgoing shortwave radiation quality metric that summarizes the passed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outSWGapNAQM,"Outgoing shortwave radiation quality metric that summarizes when the gap test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outSWSpikeFailQM,"Outgoing shortwave radiation quality metric that summarizes the failed outcomes of the spike test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outSWSpikePassQM,"Outgoing shortwave radiation quality metric that summarizes the passed outcomes of the spike test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outSWSpikeNAQM,"Outgoing shortwave radiation quality metric that summarizes when the spike test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outSWValidCalFailQM,"Outgoing shortwave radiation quality metric that summarizes the failed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outSWValidCalPassQM,"Outgoing shortwave radiation quality metric that summarizes the passed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outSWValidCalNAQM,"Outgoing shortwave radiation quality metric that summarizes when the valid calibration check could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outSWAlphaQM,"Outgoing shortwave radiation quality metric detailing the outcomes of the alpha quality flag over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+SLRNRB_30min,outSWBetaQM,"Outgoing shortwave radiation quality metric detailing the outcomes of the beta quality flag over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+SLRNRB_30min,outSWFinalQF,"Outgoing shortwave radiation quality flag indicating whether a data product has passed or failed an overall assessment of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass)",unsigned integer,NA,basic
+SLRNRB_30min,outSWFinalQFSciRvw,"Outgoing shortwave radiation quality flag indicating whether a data product has failed a science review of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass/not-reviewed)",unsigned integer,NA,expanded
+SLRNRB_30min,inLWMean,"Arithmetic mean of incoming longwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_30min,inLWMinimum,"Minimum incoming longwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_30min,inLWMaximum,"Maximum incoming longwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_30min,inLWVariance,"Variance in incoming longwave radiation",real,wattsPerSquareMeterSquared,basic
+SLRNRB_30min,inLWNumPts,"Number of points used to calculate the arithmetic mean of incoming longwave radiation",real,number,basic
+SLRNRB_30min,inLWExpUncert,"Expanded uncertainty for incoming longwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_30min,inLWStdErMean,"Standard error of the mean for incoming longwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_30min,inLWRangeFailQM,"Incoming longwave radiation  quality metric that summarizes the failed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inLWRangePassQM,"Incoming longwave radiation  quality metric that summarizes the passed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inLWRangeNAQM,"Incoming longwave radiation  quality metric that summarizes when the range test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inLWPersistenceFailQM,"Incoming longwave radiation  quality metric that summarizes  the failed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inLWPersistencePassQM,"Incoming longwave radiation  quality metric that summarizes the passed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inLWPersistenceNAQM,"Incoming longwave radiation  quality metric that summarizes when the persistence test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inLWStepFailQM,"Incoming longwave radiation  quality metric that summarizes the failed outcomes of the step test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inLWStepPassQM,"Incoming longwave radiation  quality metric that summarizes the passed outcomes of the step test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inLWStepNAQM,"Incoming longwave radiation  quality metric that summarizes when the step test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inLWNullFailQM,"Incoming longwave radiation  quality metric that summarizes the failed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inLWNullPassQM,"Incoming longwave radiation  quality metric that summarizes the passed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inLWNullNAQM,"Incoming longwave radiation  quality metric that summarizes when the null test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inLWGapFailQM,"Incoming longwave radiation  quality metric that summarizes the failed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inLWGapPassQM,"Incoming longwave radiation  quality metric that summarizes the passed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inLWGapNAQM,"Incoming longwave radiation  quality metric that summarizes when the gap test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inLWSpikeFailQM,"Incoming longwave radiation  quality metric that summarizes the failed outcomes of the spike test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inLWSpikePassQM,"Incoming longwave radiation  quality metric that summarizes the passed outcomes of the spike test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inLWSpikeNAQM,"Incoming longwave radiation  quality metric that summarizes when the spike test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inLWValidCalFailQM,"Incoming longwave radiation quality metric that summarizes the failed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inLWValidCalPassQM,"Incoming longwave radiation quality metric that summarizes the passed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inLWValidCalNAQM,"Incoming longwave radiation quality metric that summarizes when the valid calibration check could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,inLWAlphaQM,"Incoming longwave radiation  quality metric detailing the outcomes of the alpha quality flag over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+SLRNRB_30min,inLWBetaQM,"Incoming longwave radiation  quality metric detailing the outcomes of the beta quality flag over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+SLRNRB_30min,inLWFinalQF,"Incoming longwave radiation  quality flag indicating whether a data product has passed or failed an overall assessment of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass)",unsigned integer,NA,basic
+SLRNRB_30min,inLWFinalQFSciRvw,"Incoming longwave radiation quality flag indicating whether a data product has failed a science review of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass/not-reviewed)",unsigned integer,NA,expanded
+SLRNRB_30min,outLWMean,"Arithmetic mean of outgoing longwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_30min,outLWMinimum,"Minimum outgoing longwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_30min,outLWMaximum,"Maximum outgoing longwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_30min,outLWVariance,"Variance in outgoing longwave radiation",real,wattsPerSquareMeterSquared,basic
+SLRNRB_30min,outLWNumPts,"Number of points used to calculate the arithmetic mean of outgoing longwave radiation",real,number,basic
+SLRNRB_30min,outLWExpUncert,"Expanded uncertainty for outgoing longwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_30min,outLWStdErMean,"Standard error of the mean for outgoing longwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_30min,outLWRangeFailQM,"Outgoing longwave radiation  quality metric that summarizes the failed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outLWRangePassQM,"Outgoing longwave radiation  quality metric that summarizes the passed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outLWRangeNAQM,"Outgoing longwave radiation  quality metric that summarizes when the range test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outLWPersistenceFailQM,"Outgoing longwave radiation  quality metric that summarizes  the failed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outLWPersistencePassQM,"Outgoing longwave radiation  quality metric that summarizes the passed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outLWPersistenceNAQM,"Outgoing longwave radiation  quality metric that summarizes when the persistence test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outLWStepFailQM,"Outgoing longwave radiation  quality metric that summarizes the failed outcomes of the step test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outLWStepPassQM,"Outgoing longwave radiation  quality metric that summarizes the passed outcomes of the step test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outLWStepNAQM,"Outgoing longwave radiation  quality metric that summarizes when the step test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outLWNullFailQM,"Outgoing longwave radiation  quality metric that summarizes the failed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outLWNullPassQM,"Outgoing longwave radiation  quality metric that summarizes the passed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outLWNullNAQM,"Outgoing longwave radiation  quality metric that summarizes when the null test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outLWGapFailQM,"Outgoing longwave radiation  quality metric that summarizes the failed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outLWGapPassQM,"Outgoing longwave radiation  quality metric that summarizes the passed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outLWGapNAQM,"Outgoing longwave radiation  quality metric that summarizes when the gap test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outLWSpikeFailQM,"Outgoing longwave radiation  quality metric that summarizes the failed outcomes of the spike test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outLWSpikePassQM,"Outgoing longwave radiation  quality metric that summarizes the passed outcomes of the spike test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outLWSpikeNAQM,"Outgoing longwave radiation  quality metric that summarizes when the spike test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outLWValidCalFailQM,"Outgoing longwave radiation quality metric that summarizes the failed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outLWValidCalPassQM,"Outgoing longwave radiation quality metric that summarizes the passed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outLWValidCalNAQM,"Outgoing longwave radiation quality metric that summarizes when the valid calibration check could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,outLWAlphaQM,"Outgoing longwave radiation  quality metric detailing the outcomes of the alpha quality flag over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+SLRNRB_30min,outLWBetaQM,"Outgoing longwave radiation  quality metric detailing the outcomes of the beta quality flag over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+SLRNRB_30min,outLWFinalQF,"Outgoing longwave radiation quality flag indicating whether a data product has passed or failed an overall assessment of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass)",unsigned integer,NA,basic
+SLRNRB_30min,outLWFinalQFSciRvw,"Outgoing longwave radiation quality flag indicating whether a data product has failed a science review of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass/not-reviewed)",unsigned integer,NA,expanded
+SLRNRB_30min,heaterFailQM,"Quality metric that summarizes when the heater was on over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,heaterPassQM,"Quality metric that summarizes when the heater was off over the averaging period, as a percent",real,percent,expanded
+SLRNRB_30min,heaterNAQM,"Quality metric that summarizes when the heater status was unknown over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,startDateTime,"Date and time at which a sampling is initiated",dateTime,NA,basic
+SLRNRB_1min,endDateTime,"Date and time at which a sampling is completed",dateTime,NA,basic
+SLRNRB_1min,inSWMean,"Arithmetic mean of incoming shortwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_1min,inSWMinimum,"Minimum incoming shortwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_1min,inSWMaximum,"Maximum incoming shortwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_1min,inSWVariance,"Variance in incoming shortwave radiation",real,wattsPerSquareMeterSquared,basic
+SLRNRB_1min,inSWNumPts,"Number of points used to calculate the arithmetic mean of incoming shortwave radiation",real,number,basic
+SLRNRB_1min,inSWExpUncert,"Expanded uncertainty for incoming shortwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_1min,inSWStdErMean,"Standard error of the mean for incoming shortwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_1min,inSWRangeFailQM,"Incoming shortwave radiation quality metric that summarizes the failed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inSWRangePassQM,"Incoming shortwave radiation quality metric that summarizes the passed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inSWRangeNAQM,"Incoming shortwave radiation quality metric that summarizes when the range test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inSWPersistenceFailQM,"Incoming shortwave radiation quality metric that summarizes  the failed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inSWPersistencePassQM,"Incoming shortwave radiation quality metric that summarizes the passed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inSWPersistenceNAQM,"Incoming shortwave radiation quality metric that summarizes when the persistence test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inSWStepFailQM,"Incoming shortwave radiation quality metric that summarizes the failed outcomes of the step test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inSWStepPassQM,"Incoming shortwave radiation quality metric that summarizes the passed outcomes of the step test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inSWStepNAQM,"Incoming shortwave radiation quality metric that summarizes when the step test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inSWNullFailQM,"Incoming shortwave radiation quality metric that summarizes the failed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inSWNullPassQM,"Incoming shortwave radiation quality metric that summarizes the passed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inSWNullNAQM,"Incoming shortwave radiation quality metric that summarizes when the null test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inSWGapFailQM,"Incoming shortwave radiation quality metric that summarizes the failed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inSWGapPassQM,"Incoming shortwave radiation quality metric that summarizes the passed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inSWGapNAQM,"Incoming shortwave radiation quality metric that summarizes when the gap test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inSWSpikeFailQM,"Incoming shortwave radiation quality metric that summarizes the failed outcomes of the spike test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inSWSpikePassQM,"Incoming shortwave radiation quality metric that summarizes the passed outcomes of the spike test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inSWSpikeNAQM,"Incoming shortwave radiation quality metric that summarizes when the spike test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inSWValidCalFailQM,"Incoming shortwave radiation quality metric that summarizes the failed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inSWValidCalPassQM,"Incoming shortwave radiation quality metric that summarizes the passed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inSWValidCalNAQM,"Incoming shortwave radiation quality metric that summarizes when the valid calibration check could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inSWAlphaQM,"Incoming shortwave radiation quality metric detailing the outcomes of the alpha quality flag over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+SLRNRB_1min,inSWBetaQM,"Incoming shortwave radiation quality metric detailing the outcomes of the beta quality flag over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+SLRNRB_1min,inSWFinalQF,"Incoming shortwave radiation quality flag indicating whether a data product has passed or failed an overall assessment of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass)",unsigned integer,NA,basic
+SLRNRB_1min,inSWFinalQFSciRvw,"Incoming shortwave radiation quality flag indicating whether a data product has failed a science review of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass/not-reviewed)",unsigned integer,NA,expanded
+SLRNRB_1min,outSWMean,"Arithmetic mean of outgoing shortwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_1min,outSWMinimum,"Minimum outgoing shortwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_1min,outSWMaximum,"Maximum outgoing shortwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_1min,outSWVariance,"Variance in outgoing shortwave radiation",real,wattsPerSquareMeterSquared,basic
+SLRNRB_1min,outSWNumPts,"Number of points used to calculate the arithmetic mean of outgoing shortwave radiation",real,number,basic
+SLRNRB_1min,outSWExpUncert,"Expanded uncertainty for outgoing shortwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_1min,outSWStdErMean,"Standard error of the mean for outgoing shortwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_1min,outSWRangeFailQM,"Outgoing shortwave radiation quality metric that summarizes the failed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outSWRangePassQM,"Outgoing shortwave radiation quality metric that summarizes the passed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outSWRangeNAQM,"Outgoing shortwave radiation quality metric that summarizes when the range test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outSWPersistenceFailQM,"Outgoing shortwave radiation quality metric that summarizes  the failed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outSWPersistencePassQM,"Outgoing shortwave radiation quality metric that summarizes the passed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outSWPersistenceNAQM,"Outgoing shortwave radiation quality metric that summarizes when the persistence test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outSWStepFailQM,"Outgoing shortwave radiation quality metric that summarizes the failed outcomes of the step test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outSWStepPassQM,"Outgoing shortwave radiation quality metric that summarizes the passed outcomes of the step test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outSWStepNAQM,"Outgoing shortwave radiation quality metric that summarizes when the step test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outSWNullFailQM,"Outgoing shortwave radiation quality metric that summarizes the failed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outSWNullPassQM,"Outgoing shortwave radiation quality metric that summarizes the passed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outSWNullNAQM,"Outgoing shortwave radiation quality metric that summarizes when the null test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outSWGapFailQM,"Outgoing shortwave radiation quality metric that summarizes the failed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outSWGapPassQM,"Outgoing shortwave radiation quality metric that summarizes the passed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outSWGapNAQM,"Outgoing shortwave radiation quality metric that summarizes when the gap test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outSWSpikeFailQM,"Outgoing shortwave radiation quality metric that summarizes the failed outcomes of the spike test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outSWSpikePassQM,"Outgoing shortwave radiation quality metric that summarizes the passed outcomes of the spike test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outSWSpikeNAQM,"Outgoing shortwave radiation quality metric that summarizes when the spike test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outSWValidCalFailQM,"Outgoing shortwave radiation quality metric that summarizes the failed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outSWValidCalPassQM,"Outgoing shortwave radiation quality metric that summarizes the passed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outSWValidCalNAQM,"Outgoing shortwave radiation quality metric that summarizes when the valid calibration check could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outSWAlphaQM,"Outgoing shortwave radiation quality metric detailing the outcomes of the alpha quality flag over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+SLRNRB_1min,outSWBetaQM,"Outgoing shortwave radiation quality metric detailing the outcomes of the beta quality flag over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+SLRNRB_1min,outSWFinalQF,"Outgoing shortwave radiation quality flag indicating whether a data product has passed or failed an overall assessment of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass)",unsigned integer,NA,basic
+SLRNRB_1min,outSWFinalQFSciRvw,"Outgoing shortwave radiation quality flag indicating whether a data product has failed a science review of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass/not-reviewed)",unsigned integer,NA,expanded
+SLRNRB_1min,inLWMean,"Arithmetic mean of incoming longwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_1min,inLWMinimum,"Minimum incoming longwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_1min,inLWMaximum,"Maximum incoming longwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_1min,inLWVariance,"Variance in incoming longwave radiation",real,wattsPerSquareMeterSquared,basic
+SLRNRB_1min,inLWNumPts,"Number of points used to calculate the arithmetic mean of incoming longwave radiation",real,number,basic
+SLRNRB_1min,inLWExpUncert,"Expanded uncertainty for incoming longwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_1min,inLWStdErMean,"Standard error of the mean for incoming longwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_1min,inLWRangeFailQM,"Incoming longwave radiation  quality metric that summarizes the failed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inLWRangePassQM,"Incoming longwave radiation  quality metric that summarizes the passed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inLWRangeNAQM,"Incoming longwave radiation  quality metric that summarizes when the range test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inLWPersistenceFailQM,"Incoming longwave radiation  quality metric that summarizes  the failed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inLWPersistencePassQM,"Incoming longwave radiation  quality metric that summarizes the passed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inLWPersistenceNAQM,"Incoming longwave radiation  quality metric that summarizes when the persistence test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inLWStepFailQM,"Incoming longwave radiation  quality metric that summarizes the failed outcomes of the step test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inLWStepPassQM,"Incoming longwave radiation  quality metric that summarizes the passed outcomes of the step test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inLWStepNAQM,"Incoming longwave radiation  quality metric that summarizes when the step test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inLWNullFailQM,"Incoming longwave radiation  quality metric that summarizes the failed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inLWNullPassQM,"Incoming longwave radiation  quality metric that summarizes the passed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inLWNullNAQM,"Incoming longwave radiation  quality metric that summarizes when the null test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inLWGapFailQM,"Incoming longwave radiation  quality metric that summarizes the failed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inLWGapPassQM,"Incoming longwave radiation  quality metric that summarizes the passed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inLWGapNAQM,"Incoming longwave radiation  quality metric that summarizes when the gap test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inLWSpikeFailQM,"Incoming longwave radiation  quality metric that summarizes the failed outcomes of the spike test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inLWSpikePassQM,"Incoming longwave radiation  quality metric that summarizes the passed outcomes of the spike test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inLWSpikeNAQM,"Incoming longwave radiation  quality metric that summarizes when the spike test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inLWValidCalFailQM,"Incoming longwave radiation quality metric that summarizes the failed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inLWValidCalPassQM,"Incoming longwave radiation quality metric that summarizes the passed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inLWValidCalNAQM,"Incoming longwave radiation quality metric that summarizes when the valid calibration check could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,inLWAlphaQM,"Incoming longwave radiation  quality metric detailing the outcomes of the alpha quality flag over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+SLRNRB_1min,inLWBetaQM,"Incoming longwave radiation  quality metric detailing the outcomes of the beta quality flag over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+SLRNRB_1min,inLWFinalQF,"Incoming longwave radiation  quality flag indicating whether a data product has passed or failed an overall assessment of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass)",unsigned integer,NA,basic
+SLRNRB_1min,inLWFinalQFSciRvw,"Incoming longwave radiation quality flag indicating whether a data product has failed a science review of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass/not-reviewed)",unsigned integer,NA,expanded
+SLRNRB_1min,outLWMean,"Arithmetic mean of outgoing longwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_1min,outLWMinimum,"Minimum outgoing longwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_1min,outLWMaximum,"Maximum outgoing longwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_1min,outLWVariance,"Variance in outgoing longwave radiation",real,wattsPerSquareMeterSquared,basic
+SLRNRB_1min,outLWNumPts,"Number of points used to calculate the arithmetic mean of outgoing longwave radiation",real,number,basic
+SLRNRB_1min,outLWExpUncert,"Expanded uncertainty for outgoing longwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_1min,outLWStdErMean,"Standard error of the mean for outgoing longwave radiation",real,wattsPerSquareMeter,basic
+SLRNRB_1min,outLWRangeFailQM,"Outgoing longwave radiation  quality metric that summarizes the failed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outLWRangePassQM,"Outgoing longwave radiation  quality metric that summarizes the passed outcomes of the range test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outLWRangeNAQM,"Outgoing longwave radiation  quality metric that summarizes when the range test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outLWPersistenceFailQM,"Outgoing longwave radiation  quality metric that summarizes  the failed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outLWPersistencePassQM,"Outgoing longwave radiation  quality metric that summarizes the passed outcomes of the persistence test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outLWPersistenceNAQM,"Outgoing longwave radiation  quality metric that summarizes when the persistence test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outLWStepFailQM,"Outgoing longwave radiation  quality metric that summarizes the failed outcomes of the step test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outLWStepPassQM,"Outgoing longwave radiation  quality metric that summarizes the passed outcomes of the step test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outLWStepNAQM,"Outgoing longwave radiation  quality metric that summarizes when the step test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outLWNullFailQM,"Outgoing longwave radiation  quality metric that summarizes the failed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outLWNullPassQM,"Outgoing longwave radiation  quality metric that summarizes the passed outcomes of the null test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outLWNullNAQM,"Outgoing longwave radiation  quality metric that summarizes when the null test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outLWGapFailQM,"Outgoing longwave radiation  quality metric that summarizes the failed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outLWGapPassQM,"Outgoing longwave radiation  quality metric that summarizes the passed outcomes of the gap test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outLWGapNAQM,"Outgoing longwave radiation  quality metric that summarizes when the gap test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outLWSpikeFailQM,"Outgoing longwave radiation  quality metric that summarizes the failed outcomes of the spike test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outLWSpikePassQM,"Outgoing longwave radiation  quality metric that summarizes the passed outcomes of the spike test over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outLWSpikeNAQM,"Outgoing longwave radiation  quality metric that summarizes when the spike test could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outLWValidCalFailQM,"Outgoing longwave radiation quality metric that summarizes the failed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outLWValidCalPassQM,"Outgoing longwave radiation quality metric that summarizes the passed outcomes of the valid calibration check over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outLWValidCalNAQM,"Outgoing longwave radiation quality metric that summarizes when the valid calibration check could not be run over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,outLWAlphaQM,"Outgoing longwave radiation  quality metric detailing the outcomes of the alpha quality flag over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+SLRNRB_1min,outLWBetaQM,"Outgoing longwave radiation  quality metric detailing the outcomes of the beta quality flag over the averaging period, as a percent and detailed in NEON.DOC.001113",real,percent,expanded
+SLRNRB_1min,outLWFinalQF,"Outgoing longwave radiation quality flag indicating whether a data product has passed or failed an overall assessment of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass)",unsigned integer,NA,basic
+SLRNRB_1min,outLWFinalQFSciRvw,"Outgoing longwave radiation quality flag indicating whether a data product has failed a science review of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass/not-reviewed)",unsigned integer,NA,expanded
+SLRNRB_1min,heaterFailQM,"Quality metric that summarizes when the heater was on over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,heaterPassQM,"Quality metric that summarizes when the heater was off over the averaging period, as a percent",real,percent,expanded
+SLRNRB_1min,heaterNAQM,"Quality metric that summarizes when the heater status was unknown over the averaging period, as a percent",real,percent,expanded

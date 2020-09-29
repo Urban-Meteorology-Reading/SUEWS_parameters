@@ -1,0 +1,192 @@
+This data package been produced by and downloaded from the National Ecological Observatory Network, managed cooperatively by Battelle. These data are provided under the terms of the NEON data policy at http://data.neonscience.org/data-policy. 
+
+DATA PRODUCT INFORMATION
+------------------------
+
+ID: NEON.DOM.SITE.DP3.30011.001
+
+Name: Albedo - spectrometer - mosaic
+
+Description: Total amount of solar radiation in the 0.4 to 2.5 micron band reflected by the Earth’s surface into an upward hemisphere divided by the total amount incident from this hemisphere
+
+NEON Science Team Supplier: AOP
+
+Abstract: Albedo, the ratio of a surface’s reflected energy to its incident energy, is an important measurement for characterizing earth system energy balance. Light and dark surfaces correspond to high and low albedo, respectively. An opaque surface’s difference in energy reflected as compared to the energy incident on it is absorbed by the surface, increasing its temperature. (Sabins, Jr., 1978). Albedo values depend on wavelength, illumination sources and geometry, sensor viewing geometry, reflectance as a function of angle and wavelength, as well as the scattering, absorbing, and re-radiating effects of the atmosphere. These factors are modeled/accounted for to best approximate a bi-hemispherical reflectance as would be measured in a laboratory setting. To this end, the wavelength-integrated surface reflectance, weighted with the global flux on the ground, is produced as the best practically achievable albedo measurement. (Richter & Schlapfer, 2017) L3 Albedo is distributed in 1km tiles created by taking the most-nadir pixels from the clearest flightlines acquired for each pixel.
+
+Latency:
+AOP data will be available 60 days after the final collection day at a site. AOP legacy data (those collected in 2013 through 2016) currently has partial availability, and will be completely available by April of 2019.
+
+Brief Design Description: Albedo data products are derived from NEON Airborne Observation Platform (AOP) Imaging Spectrometer (NIS) data collected in North-South oriented flight lines to reduce BRDF effects. These data are processed to orthorectified directional surface reflectance and then to Albedo as best practically approximated by wavelength-integrated surface reflectance, weighted with the global flux on the ground. L3 Albedo is distributed in 1 km square tiles with 1 m pixels.
+
+Brief Study Area Description: NEON AOP data are planned for yearly collects at all NEON sites at 90% of maximum greenness or greater. Coverage is planned to include at least 95% of NIS Tower Airshed area as well as at least 80% of a minimum 10km x 10 km box around that. All acquisitions are subject to change due to weather conditions as well as program planning changes.
+
+Sensor(s): NEON Airborne Observation Platform (AOP) Imaging Spectrometer (NIS) - NASA/JPL AVIRIS-NG
+
+Keywords: reflectance, albedo, remote sensing, airborne, spectrometer, flight line, aerial
+
+QUERY INFORMATION
+-----------------
+
+Site: LIRO
+Domain: D05
+
+DATA PACKAGE CONTENTS
+---------------------
+
+This zip package contains the following documentation files:
+
+- This readme file: NEON.D05.LIRO.DP3.30011.001.readme.20190925T213945Z.txt
+- Other related documents, such as engineering specifications, field protocols and data processing documentation: 
+NEON.DOC.004362vA
+NEON.DOC.001290vC
+NEON.DOC.004365vA
+
+Additional documentation for this data product or other related documentation are available at http://data.neonscience.org/documents.
+
+This zip package also contains 24 data files:
+NEON_D05_LIRO_DP3_289000_5099000_albedo.tif
+NEON_D05_LIRO_DP3_290000_5095000_albedo.tif
+NEON_D05_LIRO_DP3_291000_5098000_albedo.tif
+LIRO_L2_spectrometer_processing.pdf
+NEON_D05_LIRO_DP3_291000_5097000_albedo.tif
+NEON_D05_LIRO_DP3_289000_5098000_albedo.tif
+NEON_D05_LIRO_DP3_290000_5096000_albedo.tif
+NEON_D05_LIRO_DP3_292000_5097000_albedo.tif
+NEON_D05_LIRO_DP3_289000_5097000_albedo.tif
+NEON_D05_LIRO_DP3_289000_5095000_albedo.tif
+NEON_D05_LIRO_DP3_290000_5100000_albedo.tif
+NEON_D05_LIRO_DP3_292000_5096000_albedo.tif
+NEON_D05_LIRO_DP3_289000_5096000_albedo.tif
+NEON_D05_LIRO_DP3_292000_5095000_albedo.tif
+NEON_D05_LIRO_DP3_291000_5099000_albedo.tif
+NEON_D05_LIRO_DP3_290000_5098000_albedo.tif
+NEON_D05_LIRO_DP3_292000_5098000_albedo.tif
+NEON_D05_LIRO_DP3_291000_5100000_albedo.tif
+NEON_D05_LIRO_DP3_291000_5096000_albedo.tif
+NEON_D05_LIRO_DP3_289000_5100000_albedo.tif
+NEON_D05_LIRO_DP3_290000_5097000_albedo.tif
+NEON_D05_LIRO_DP3_292000_5099000_albedo.tif
+NEON_D05_LIRO_DP3_290000_5099000_albedo.tif
+NEON_D05_LIRO_DP3_291000_5095000_albedo.tif
+
+Basic download package definition: Includes the data product as a 1 km by 1 km mosaic tile in a single band orthorectified GeoTIFF. There is no expanded package for this product.
+
+FILE NAMING CONVENTIONS
+-----------------------
+
+NEON data files are named using a series of component abbreviations separated by periods. File naming conventions for NEON data files differ between NEON science teams. A file will have the same name whether it is accessed via the data portal or the API.
+
+NEON airborne observational platform (AOP) data file naming conventions:
+Data product: File name structure
+------------ | -------------------
+L1 products
+   Digital camera: FLHTSTRT_EHCCCCCC(IMAGEDATETIME)-NNNN_ort.tif
+   Discrete return lidar, unclassified: NEON_DOM_SITE_DPL_LNNN-R_FLIGHTSTRT_DESC.laz
+   Discrete return lidar, classified:  NEON_DOM_SITE_DPL_EEEEEE_NNNNNNN_DESC.laz
+   Spectrometer: NEON_DOM_SITE_DPL_FLHTDATE_FFFFFF_DESC.h5
+   Waveform lidar: NEON_DOM_SITE_DPL_LNNN-R_FLIGHTSTRT_DESC.wvz (or .plz)
+L2 products
+   Spectrometer: NEON_DOM_SITE_DPL_FLHTDATE_FFFFFF_DESC.zip (or .tif)
+L3 products
+   Spectrometer / Lidar / Camera: NEON_DOM_SITE_DPL_EEEEEE_NNNNNNN_DESC.laz
+
+The definitions of component abbreviations are below. See NEON.DOC.002651: NEON Data Product Numbering Convention, located at http://data.neonscience.org/documents for more information.
+
+General conventions, used for all data products:
+   NEON: denotes the organizational origin of the data product and identifies the product as operational; data collected as part of a special data collection exercise are designated by a separate, unique alphanumeric code created by the PI.
+
+   DOM: a three-character alphanumeric code, referring to the domain of data acquisition (D01 - D20).
+
+   SITE: a four-character alphanumeric code, referring to the site of data acquisition; all sites are designated by a standardized four-character alphabetic code.
+
+   DPL: a three-character alphanumeric code, referring to data product processing level;
+
+   PRNUM: a five-character numeric code, referring to the data product number (see the Data Product Catalog at http://data.neonscience.org/data-product-catalog).
+
+   REV: a three-digit designation, referring to the revision number of the data product. The REV value is incremented by 1 each time a major change is made in instrumentation, data collection protocol, or data processing such that data from the preceding revision is not directly comparable to the new.
+
+   HOR: a three-character designation, referring to measurement locations within one horizontal plane. For example, if five surface measurements were taken, one at each of the five soil array plots, the number in the HOR field would range from 001-005. 
+
+   VER: a three-character designation, referring to measurement locations within one vertical plane. For example, if eight air temperature measurements are collected, one at each tower vertical level, the number in the VER field would range from 010-080. If five soil temperature measurements are collected below the soil surface, the number in the VER field would range from 501-505. 
+
+   TMI: a three-character designation, referring to the temporal representation, averaging period, or coverage of the data product (e.g., minute, hour, month, year, sub-hourly, day, lunar month, single instance, seasonal, annual, multi-annual). 000 = native resolution, 001 = native resolution (variable or regular) or 1 minute, 002 = 2 minute, 005 = 5 minute, 015 = 15 minute, 030 = 30 minute, 060 = 60 minutes or 1 hour, 100 = approximately once per minute at stream sites and once every 5-10 minutes at buoy sites (lakes/rivers), 101-103 = native resolution of replicate sensor 1, 2, and 3 respectively, 999 = Sensor conducts measurements at varied interval depending on air mass, 01D = 1 day, 01M = 1 month, 01Y = 1 year.
+
+   DESC: an abbreviated description of the data file or table.
+
+   YYYY-MM: the year and month of the data in the file.
+
+   PKGTYPE: the type of data package downloaded. Options are 'basic', representing the basic download package, or 'expanded',representing the expanded download package (see more information below).
+
+   GENTIME: the date-time stamp when the file was generated, in UTC. The format of the date-time stamp is YYYYMMDDTHHmmSSZ.
+
+Time stamp conventions:
+   YYYY: Year
+   YY: Year, last two digits only
+   MM: Month: 01-12
+   DD: Day: 01-31
+   T: Indicator that the time stamp is beginning
+   HH: Hours: 00-23
+   mm: Minutes: 00-59
+   SS: Seconds: 00-59
+   Z: Universal Time Coordinated (Universal Coordinated Time), or UTC
+
+AOP-specific conventions:
+   CCCCCC: Digital camera serial number
+   EEEEEE: UTM easting of lower left corner
+   FFFFFF: Numeric code for an individual flightline
+   FLHTDATE: Date of flight, YYYYMMDD
+   FLHTSTRT: Start time of flight, YYMMDDHH
+   FLIGHTSTRT: Start time of flight, YYYYMMDDHH
+   IMAGEDATETIME: Date and time of image capture, YYYYMMDDHHmmSS
+   NNN: Planned flightline number
+   NNNN: Sequential number for indexing files
+   NNNNNNN: UTM northing of lower left corner
+   R: Repeat number
+
+ADDITIONAL INFORMATION
+----------------------
+
+Data products that are a source of this data product:
+NEON.DOM.SITE.DP2.30011.001, Albedo - spectrometer - flightline
+
+Data products that are derived from this data product:
+
+Other related data products (by sensor, protocol, or variable measured):
+NEON.DOM.SITE.DP3.30022.001, Canopy lignin - mosaic
+NEON.DOM.SITE.DP2.30016.001, Total biomass map - spectrometer - flightline
+NEON.DOM.SITE.DP3.30026.001, Vegetation indices - spectrometer - mosaic
+NEON.DOM.SITE.DP3.30012.001, LAI - spectrometer - mosaic
+NEON.DOM.SITE.DP2.30019.001, Canopy water content - flightline
+NEON.DOM.SITE.DP3.30006.001, Spectrometer orthorectified surface directional reflectance - mosaic
+NEON.DOM.SITE.DP3.30020.001, Canopy xanthophyll cycle - mosaic
+NEON.DOM.SITE.DP1.30012.001, Field spectral data
+NEON.DOM.SITE.DP2.30018.001, Canopy nitrogen - flightline
+NEON.DOM.SITE.DP3.30018.001, Canopy nitrogen - mosaic
+NEON.DOM.SITE.DP1.30008.001, Spectrometer orthrorectified at-sensor radiance - flightline
+NEON.DOM.SITE.DP2.30022.001, Canopy lignin - flightline
+NEON.DOM.SITE.DP2.30026.001, Vegetation indices - spectrometer - flightline
+NEON.DOM.SITE.DP2.30012.001, LAI - spectrometer - flightline
+NEON.DOM.SITE.DP2.30020.001, Canopy xanthophyll cycle - flightline
+NEON.DOM.SITE.DP1.30006.001, Spectrometer orthorectified surface directional reflectance - flightline
+NEON.DOM.SITE.DP3.30016.001, Total biomass map - spectrometer - mosaic
+NEON.DOM.SITE.DP2.30014.001, fPAR - spectrometer - flightline
+NEON.DOM.SITE.DP3.30019.001, Canopy water content - mosaic
+NEON.DOM.SITE.DP3.30014.001, fPAR - spectrometer - mosaic
+
+CHANGE LOG
+----------
+
+ADDITIONAL REMARKS
+------------------
+
+NEON DATA POLICY AND CITATION GUIDELINES
+----------------------------------------
+
+Please visit http://data.neonscience.org/data-policy for more information about NEON's data policy and citation guidelines.
+
+DATA QUALITY AND VERSIONING
+---------------------------
+
+The data contained in this file are considered provisional. Updates to the data, QA/QC and/or processing algorithms over time will occur on an as-needed basis.  Please check back to this site for updates tracked in change logs.  Query reproducibility on provisional data cannot be guaranteed. 
+ 
+Starting in 2020 or earlier, NEON will begin to offer static versions of each data product, annotated with a globally unique identifier. Versioned IS and OS data will be produced by reprocessing each IS and OS data product from the beginning of the data collection period to approximately 12-18 months prior to the reprocessing date (to allow for calibration checks, return of external lab data, etc.). The reprocessing step will use the most recent QA/QC methods and processing algorithms. Versioned AOP data will be produced by reprocessing the entire AOP archive as advances in algorithms and processing technology are incorporated. This will typically occur in the northern winter months, between flight season peaks, and will be on the order of every 3 to 5 years in frequency.
